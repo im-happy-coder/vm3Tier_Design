@@ -1,28 +1,17 @@
----
-emoji: 🧼
-title: VM환경에서 3Tier 구축 하기 (toy_project)
-date: '2022-09-25'
-author: 장태인
-tags: vm 3tier 
-categories: study
----
 
-![vm3tier](./img/vm3tier.jpg)
+## Diagram
 
+![vm3tier](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/vm3tier.jpg?raw=true)
 
 VM환경에서 3Tier Architecture 설계
 
-해당 게시글은 상세한 설명은 없습니다.
-
-해당 프로젝트를 어떻게 구성하였는지에 대한 결과 화면을 보여주기 위한 게시글입니다.
-
-설치 방식은 패키지 설치방식이 아닌 소스 컴파일 설치방식으로 이루어 졌습니다.
+설치 방식은 패키지 설치방식이 </br>아닌 소스 컴파일 설치방식으로 이루어 졌습니다.
 
 ---
 
 ## 🌡 VirtualBox 환경 구성 및 네트워크 설정
 
-![vm_1](./img/vm_1.PNG)
+![vm_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/vm_1.PNG?raw=true)
 
 VM1 : NAT,호스트 전용 어댑터
 
@@ -93,63 +82,62 @@ engn003/
 
 apache 설치 완료 실행 화면
 
-![apache_1](./img/apache_1.PNG)
+![apache_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/apache_1.PNG?raw=true)
 
 
 ## 🖊 apache tomcat 연결
 
 apache conf 설정 파일
 
-![mod_jk_1](./img/mod_jk_1.PNG)
+![mod_jk_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/mod_jk_1.PNG?raw=true)
 
 apache tomcat 연결 설정과 SVN 연결 설정 등..
 
-![apache_2](./img/apache_2.PNG)
+![apache_2](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/apache_2.PNG?raw=true)
 
 ## 📮 tomcat session clustering 구성
 
 tomcat conf/server.xml 세션 클러스터링 설정
 
-![session](./img/session.PNG)
+![session](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/session.PNG?raw=true)
 
 멀티캐스팅을 라우팅 설정
 
-![session_1](./img/session_1.PNG)
+![session_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/session_1.PNG?raw=true)
 
 ## 📍 Mysql 설치 및 연동
 
 Mysql Source 설치 실행화면
 
-![mysql_1](./img/mysql_1.PNG)
-
+![mysql_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/mysql_1.PNG?raw=true)
 
 ## 🖌 svn, jenkins, maven 배포 환경 구성
 
-### 📏 SVN
+### SVN
 
 svn apache 연결 설정
 
-![svn_1](./img/svn_1.PNG)
+![svn_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/svn_1.PNG?raw=true)
 
 svn 사용자 passwd 암호화
 
-![svn_2](./img/svn_2.PNG)
+![svn_2](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/svn_2.PNG?raw=true)
 
 브라우저에서 svn 확인
 
-![svn_3](./img/svn_3.PNG)
+![svn_3](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/svn_3.PNG?raw=true)
 
 ### 🔍 nexus
 
 Nexus 설치 및 실행
 
-![nexus_1](./img/nexus_1.PNG)
+![nexus_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/nexus_1.PNG?raw=true)
 
 nexus Role 추가 및 계정 설정
 
-![nexus_2](./img/nexus_2.PNG)
+![nexus_2](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/nexus_2.PNG?raw=true)
 
-![nexus_3](./img/nexus_3.PNG)
+![nexus_3](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/nexus_3.PNG?raw=true)
 
 settings.xml 설정
 
@@ -230,21 +218,16 @@ bin/startup.sh
 
 프로젝트 생성 및 설정
 
-![jenkins_1](./img/jenkins_1.PNG)
+![jenkins_1](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/jenkins_1.PNG?raw=true)
 
-![jenkins_2](./img/jenkins_2.PNG)
+![jenkins_2](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/jenkins_2.PNG?raw=true)
 
-![jenkins_3](./img/jenkins_3.PNG)
+![jenkins_3](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/jenkins_3.PNG?raw=true)
 
 빌드 결과
 
-![jenkins_4](./img/jenkins_4.PNG)
-
+![jenkins_4](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/jenkins_4.PNG?raw=true)
 
 브라우저에서 확인
 
-![test_page](./img/test_page.PNG)
-
-```toc
-
-```
+![test_page](https://github.com/im-happy-coder/vm3Tier_Design/blob/main/img/test_page.PNG?raw=true)
